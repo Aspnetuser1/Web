@@ -1,0 +1,105 @@
+.1 Write a program to accept 4 numbers from the user and display the product of numbers
+Code:
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("sumit jha 26");
+        Console.WriteLine("enter four numbers:");
+        int n1 =Convert.ToInt32(Console.ReadLine());
+        int n2 = Convert.ToInt32(Console.ReadLine());
+        int n3 = Convert.ToInt32(Console.ReadLine());
+        int n4 = Convert.ToInt32(Console.ReadLine());
+
+        int p = n1 * n2 * n3 * n4;
+        Console.WriteLine("product=" + p);
+        Console.ReadKey();
+    }
+}
+Q.2 Write a program to accept a number from the user and check whether It is even or odd.
+code: using System;
+
+sing System;
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Enter The Number :");
+        int num = Convert.ToInt32(Console.ReadLine());
+
+        if (num % 2 == 0)
+        {
+            Console.WriteLine(num + " is even number");
+        }
+        else
+        {
+            Console.WriteLine(num + " is odd number");
+        }
+        Console.ReadKey();
+    }
+}
+Q.3 Write a program to accept 2 numbers from the user and display the larger number
+Code:
+using System;
+class program
+{
+   public static void Main(string[] args)
+    {
+       Console.WriteLine("sumit jha 26");
+        Console.WriteLine("Enter first number");
+        int a = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter second number");
+        int b = Convert.ToInt32(Console.ReadLine());
+      if (a > b)
+        {
+            Console.WriteLine(a + " is larger");
+        }
+        else
+        {
+            Console.WriteLine(b + " Is Larger");
+        }
+        Console.ReadKey();
+    }
+Q,4 Write a program to accept a number from the user and display reverse and sum of digits
+Code: using System;
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Enter The Number :");
+        int num = Int32.Parse(Console.ReadLine());
+        int temp = num;
+        int rev = 0;
+        int sum = 0;
+        while (num > 0)
+        {
+            int r = num % 10;
+            rev = rev * 10 + r;
+            sum = sum + r;
+            num = num / 10;
+        }
+
+        Console.WriteLine("Reverse =" + rev);
+        Console.WriteLine("Sum of Digits =" + sum);
+        if (rev == temp) Console.WriteLine("Pallindrom Number");
+        else Console.WriteLine("Not a Pallindrom");
+        Console.ReadKey();
+    }
+}
+Q,5 Write a program to accept a number from the user and display the factorial of the number.
+Code: 
+using System;
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Enter The Number :");
+        int num = Int32.Parse(Console.ReadLine());
+
+        int f = 1;
+        for (int i = 1; i <= num; i++)
+        {
+            f = f * i;
+        }
+        Console.WriteLine("Factorial {0}{1} :", num, f);
+        Console.ReadKey();
